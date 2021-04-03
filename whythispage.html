@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Why This Site</title>
+		<link rel="stylesheet" href="wtp.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+<body>
+	<div id="sidenav">
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="whythispage.html">WHY THIS SITE</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+	</div>
+	<div id="manubtn">
+		<img src="images/menu.png" id="menu">
+	</div>
+	<header>
+		<p>Click card to open</p>
+	</header>
+<div class="card__container js-card-opener">
+  <div class="card">
+    <div class="card__panel card__panel--front">
+      <h1>WHY THIS PAGE...</h1>
+    </div>
+    <div class="card__panel card__panel--inside-left">
+		<img src="images/download.png">
+    </div>
+    <div class="card__panel card__panel--inside-right">
+      <p>This website is created to appreciate our heroes for their excellent work 
+	  and to give tribute to those soldiers who gave their live in order to protect our country.As the citizen of india,we 
+	  extend a warm thank you to our Defence force which has always fought for the honour of our country and always kept 
+	  us safe.</p>
+	  <h2>Jai Hind Jai Bharat</h2>
+    </div>
+  </div>
+
+</div>
+<script>
+var manubtn = document.getElementById("manubtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+ sidenav.style.right= "-250px"
+manubtn.onclick = function(){
+	if (sidenav.style.right == "-250px"){
+		 sidenav.style.right = "0";
+		   menu.src="images/close.png";
+	}
+	else{
+		sidenav.style.right = "-250px";
+		menu.src="images/menu.png";
+	}
+}
+
+var scroll= new Smoothscroll('a[href*="#"]',{
+	speed:1000,
+	speedAsDuration:ture
+});
+</script>
+<script>
+const openBtn = document.querySelector(".js-card-opener");
+
+openBtn.onclick = function () {
+  document.body.classList.toggle("open");
+};
+</script>
+</body>
+</html>

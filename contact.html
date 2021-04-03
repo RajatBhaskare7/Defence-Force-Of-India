@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Contact</title>
+		<link rel="stylesheet" href="contact.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Font Awesome Kit -->
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body>
+	<div id="sidenav">
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="whythispage.html">WHY THIS SITE</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+	</div>
+	<div id="manubtn">
+		<img src="images/menu.png" id="menu">
+	</div>
+	<div class="card">
+         <div class="img"> <span></span><span></span><span></span><span></span></div>
+         <div class="content">
+			<!--Developer of the website-->
+             <h2>Developer</h2>
+             <h4>Rajat Bhaskare</h4>
+		<div class="container">
+			<span>Social Media</span>
+			<a class="icon" href="https://RajatBhaskare7.github.io/"><i class="fa fa-github" aria-hidden="true" target="_blank"></i></a>
+			<a class="icon" href="http://www.instagram.com/_rajat_bhaskare_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a class="icon" href="https://www.linkedin.com/in/rajat-bhaskare-b40443202" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+			<a class="icon" href="https://www.facebook.com/rajat.bhaskare.5" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a class="icon"  href="mailto:rajatbhaskare@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+		</div>
+		<br>
+		<div class="container" style="height:90px;">
+			<span>Contact Us</span>
+			<a class="icon"  href="#" ><i class="fa fa-address-book" aria-hidden="true"></i></a>
+			<h4 class="icon"  style="font-size:14px;">65-indira colony burhanpur</h4>
+			<a class="icon"  href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+			<h4 class="icon" style="font-size:14px;">+919845738392</h4>
+
+		 </div>
+		 <!--owner of the website-->
+		  <h2>Owner of the site</h2>
+             <h4>Indian Defence</h4>
+		<div class="container">
+			<span>Media</span>
+			<a class="icon"  href="mailto:rmo@mod.nic.in"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+			<h4 class="icon" style="font-size:12px; text-transform:lowercase;">rmo@mod.nic.in</h4>
+			<a class="icon"  href="https://mod.gov.in"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+			<h4 class="icon"  style="font-size:12px;text-transform:lowercase;">https://mod.gov.in</h4>
+		</div>
+		<br>
+		<div class="container" style="height:90px;">
+			<span>Contact Us</span>
+			<a class="icon"  href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a>
+			<h4 class="icon"  style="font-size:14px;">104,South Block,New Delhi</h4>
+			<a class="icon"  href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+			<h4 class="icon" style="font-size:14px;">+919173924758</h4>
+
+		 </div>
+		 </div>
+		 
+			
+         </div>
+		 
+     </div>
+	
+
+<script>
+var manubtn = document.getElementById("manubtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+ sidenav.style.right= "-250px"
+manubtn.onclick = function(){
+	if (sidenav.style.right == "-250px"){
+		 sidenav.style.right = "0";
+		   menu.src="images/close.png";
+	}
+	else{
+		sidenav.style.right = "-250px";
+		menu.src="images/menu.png";
+	}
+}
+
+var scroll= new Smoothscroll('a[href*="#"]',{
+	speed:1000,
+	speedAsDuration:ture
+});
+
+
+
+
+</script>
+</body>
+</html>
